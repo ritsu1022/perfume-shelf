@@ -1,24 +1,49 @@
-# README
+# アプリケーション名
+<br>
+PERFUME SHELF
+<br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+<br>
+所持している香水のデータを登録し、一覧・管理をしやすくすることができる。
+<br>
 
-Things you may want to cover:
+# URL
 
-* Ruby version
+# テスト用アカウント
 
-* System dependencies
+# 利用方法
+## 香水の登録
+1.トップページのヘッダーからユーザー新規登録を行う
+2.placeボタンから香水のデータ（画像、名前、ブランド名、種類、香調、メモ）を入力し登録する
+<br>
 
-* Configuration
+## 自分以外のユーザーをフォローする
+1.自分以外のユーザーのマイページにあるフォローボタンを押す
+<br>
 
-* Database creation
+## 自分以外のユーザーが登録した香水にいいねをする
+1.いいねをしたい香水の詳細ページにあるハートボタンを押す
+<br>
 
-* Database initialization
+# アプリケーションを作成した背景
+自分自身の抱えている課題として、「趣味で集めている香水を管理しきれない」ことが挙げられる。課題を分析した結果、「持っている香水を一覧にして簡単に確認できるツールがない」ということが原因であると仮説を立てた。また、自分の好みでは出会えなかった香水や、自分以外の方の感想なども確認してより香水を楽しめるよう、香水好きの人同士でフォロー機能やいいねを送ることができるコレクションアプリケーションを開発することにした。
+<br>
 
-* How to run the test suite
+# 洗いだした要件
 
-* Services (job queues, cache servers, search engines, etc.)
+# 実装した機能についての画像やGIF及びその説明
 
-* Deployment instructions
+# 実装予定の機能
+現在はアプリケーションを作成したばかりの段階。<br>
+今後はユーザー管理機能、香水の登録及び編集等の管理機能、フォロー機能、いいね機能を実装予定。
+<br>
 
-* ...
+# データベース設計
+
+# 画面遷移図
+
+# 開発環境
+
+
+
