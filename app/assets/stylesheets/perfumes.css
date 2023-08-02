@@ -1,0 +1,45 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: #333631;
+  padding: 15px 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_shelf {
+  background-color: #5a544b;
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+
+.header_logo {
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.login {
+  border: #fff solid 2px;
+  font-size: 15px;
+  height: 30px;
+  width: 60px;
+  color: #fff;
+  margin-right: 15px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.sign_up {
+  border: #fff solid 2px;
+  font-size: 15px;
+  height: 30px;
+  width: 60px;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.login_btn {
+  list-style: none;
+  display: flex;
+}
