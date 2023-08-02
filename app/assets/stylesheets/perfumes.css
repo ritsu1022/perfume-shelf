@@ -13,9 +13,13 @@
   height: calc(100vh - 80px);
 }
 
+/**********************************
+  ヘッダー
+**********************************/
 .header_logo {
   font-size: 35px;
   line-height: 50px;
+  font-weight: bold;
 }
 
 .login {
@@ -43,3 +47,15 @@
   list-style: none;
   display: flex;
 }
+
+/********************************
+  メイン
+********************************/
+
+.new_collection_logo {
+  padding: 50px 100px 0 100px;
+  height: 120px;
+  color: #fff;
+  font-size: 30px;
+}
+
