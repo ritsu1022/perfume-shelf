@@ -23,17 +23,14 @@
 }
 
 .login {
-  border: #fff solid 2px;
-  font-size: 15px;
-  height: 30px;
-  width: 60px;
-  color: #fff;
   margin-right: 15px;
-  padding: 5px 10px;
-  text-decoration: none;
 }
 
-.sign_up {
+.logout {
+  margin-right: 15px;
+}
+
+.header_btn {
   border: #fff solid 2px;
   font-size: 15px;
   height: 30px;
@@ -53,9 +50,21 @@
 ********************************/
 
 .new_collection_logo {
-  padding: 50px 100px 0 100px;
-  height: 120px;
+  padding: 10px 100px 0 100px;
+  height: 40px;
   color: #fff;
   font-size: 30px;
+}
+
+.greeting {
+  padding: 30px 100px 0 100px;
+  height: 60px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.greeting_link {
+  text-decoration: none;
+  color: #fff;
 }
 
