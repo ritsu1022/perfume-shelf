@@ -1,4 +1,10 @@
 <div class="main_wrapper">
+  <% if user_signed_in? %>
+    <div class="greeting">
+      Hello,
+        <%= link_to "#{current_user.name}!", "/users/#{current_user.id}", class: :greeting_link %>
+    </div>
+  <% end %>
   <div class="new_collection_logo">
     New collection
   </div>
