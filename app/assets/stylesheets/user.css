@@ -1,0 +1,85 @@
+/***********************************
+ヘッダー
+***********************************/
+
+.second-header {
+  width: 100vw;
+  height: 80px;
+  background-color: #333631;
+  padding: 15px 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.second-logo {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/***********************************
+ページメイン部分共通
+***********************************/
+
+.account_page {
+  background-color: #5a544b;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account_page h1 {
+  margin: 0;
+}
+
+/***********************************
+ページメイン部分ログイン
+***********************************/
+
+.sessions_left {
+  margin-right: 100px;
+}
+
+.field-input {
+  padding-top: 5px;
+}
+
+.field-label {
+  padding-top: 15px;
+}
+
+.login_btn {
+  width: 100px;
+  border: 2px solid #333631;
+  margin-top: 25px;
+  padding: 10px 5px;
+  background-color: #333631;
+}
+
+/************************************
+ページメイン部分新規登録
+************************************/
+
+.registrations_left {
+  margin-right: 100px;
+}
+
+.favorites {
+  display: flex;
+}
+
+.field {
+  margin-right: 5px;
+}
+
+.signup_btn {
+  width: 150px;
+  padding: 10px 5px;
+  background-color: #333631;
+  border: 2px solid #333631;
+  margin-top: 25px;
+}
