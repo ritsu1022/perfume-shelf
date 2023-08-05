@@ -13,7 +13,7 @@ PERFUME SHELF
 <br>
 
 # テスト用アカウント
-アカウント名：test3
+アカウント名：test3<br>
 パスワード　：aaa111
 <br>
 
