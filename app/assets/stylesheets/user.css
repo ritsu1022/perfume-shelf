@@ -83,3 +83,43 @@
   border: 2px solid #333631;
   margin-top: 25px;
 }
+
+/*************************************
+ページメイン部分編集
+*************************************/
+
+.edit_account_left {
+  margin-right: 100px;
+}
+
+.update_btn {
+  width: 100px;
+  border: 2px solid #333631;
+  margin-top: 25px;
+  padding: 10px 5px;
+  background-color: #333631;
+}
+
+.logo_lower_btn {
+  margin-top: 25px;
+}
+
+.second_logout_btn {
+  width: 100px;
+  border: 2px solid #e9dfe5;
+  margin-top: 25px;
+  padding: 10px 5px;
+  background-color: #e9dfe5;
+  text-decoration: none;
+  color: black;
+}
+
+.back_btn {
+  width: 100px;
+  border: 2px solid #e9dfe5;
+  margin-top: 25px;
+  padding: 10px 5px;
+  background-color: #e9dfe5;
+  text-decoration: none;
+  color: black;
+}

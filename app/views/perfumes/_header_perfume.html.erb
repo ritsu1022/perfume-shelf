@@ -6,7 +6,7 @@
   <% if user_signed_in? %>
     <ul class="login_btn">
       <li><%= link_to "logout", destroy_user_session_path, method: :delete, class: "logout header_btn" %></li>
-      <li><%= link_to "new perfume", "#", class: "new_perfume header_btn" %></li>
+      <li><%= link_to "user edit", edit_user_path(id: current_user.id), class: "edit_user header_btn" %></li>
     </ul>
   <% else %>
     <ul class="login_btn">
