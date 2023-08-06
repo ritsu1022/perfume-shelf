@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'perfumes/index'
   root to: "perfumes#index"
   resources :perfumes, only: [:destroy]
+  resources :users, only: [:edit, :update]
 end
