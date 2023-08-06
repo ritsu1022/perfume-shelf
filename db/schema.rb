@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_08_02_131720) do
+ActiveRecord::Schema.define(version: 2023_08_05_150128) do
+
+  create_table "perfumes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "perfumename", null: false
+    t.string "brand"
+    t.integer "type_id"
+    t.text "note"
+    t.text "memo"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_perfumes_on_user_id"
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", default: "", null: false
@@ -28,4 +40,5 @@ ActiveRecord::Schema.define(version: 2023_08_02_131720) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "perfumes", "users"
 end
