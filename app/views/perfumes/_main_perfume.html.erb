@@ -8,4 +8,15 @@
   <div class="new_collection_logo">
     New collection
   </div>
+  <% if user_signed_in? %>
+  <%= link_to(new_perfume_path, class: "lineup_btn") do %>
+    <span class="lineup_btn_text">Line up</span>
+    <%= image_tag 'icon_perfume.png', size: '185x50' ,class: "lineup_btn_icon" %>
+  <% end %>
+<% else %>
+  <%= link_to(new_user_session_path, class: "lineup_btn") do %>
+    <span class="lineup_btn_text">Line up</span>
+    <%= image_tag 'icon_perfume.png', size: '185x50' ,class: "lineup_btn_icon" %>
+  <% end %>
+<% end %>
 </div>
