@@ -13,9 +13,8 @@
   height: calc(100vh - 80px);
 }
 
-/**********************************
-  ヘッダー
-**********************************/
+/*  ヘッダー  */
+
 .header_logo {
   font-size: 35px;
   line-height: 50px;
@@ -45,9 +44,7 @@
   display: flex;
 }
 
-/********************************
-  メイン
-********************************/
+/*  メイン  */
 
 .new_collection_logo {
   padding: 10px 100px 0 100px;
@@ -66,5 +63,52 @@
 .greeting_link {
   text-decoration: none;
   color: #fff;
+}
+
+/*  香水登録ページ  */
+
+header { 
+  width: 100vw;
+  height: 80px;
+  background-color: #333631;
+  padding: 15px 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.lineup_header {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.perfume_lineup_main {
+  text-align: center;
+  background-color: #5a544b;
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+
+.perfume_lineup_main h2 {
+  margin: 0;
+  padding-top: 35px;
+}
+
+.must {
+  background-color: #c97586;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 1px 2px;
+}
+
+.weight_bold_text {
+  font-weight: 600;
+}
+
+.img_upload {
+  display: flex;
+  justify-content: center;
 }
 
