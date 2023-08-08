@@ -1,0 +1,68 @@
+<div class="perfume_lineup_contents">
+  <header class="perfume_lineup_header">
+    <%= link_to 'Perfume shelf', root_path, class:"lineup_header" %>
+  </header>
+
+  <div class="items-sell-main">
+    <h2 class="items-sell-title">Enter perfume information</h2>
+    <%= form_with model: @perfume, local: true do |f| %>
+
+    
+   <%= render 'shared/error_messages', model: f.object %>
+    
+
+    <div class="img_upload">
+      <div class="weight_bold_text">
+        Perfume image
+        <span class="indispensable">indespensable</span>
+      </div>
+      <div class="click_upload">
+        <p>
+          Click to upload file
+        </p>
+        <%= f.file_field :image, id:"perfume_image" %>
+      </div>
+    </div>
+
+
+    <div class="new-perfumes">
+      <div class="weight_bold_text">
+        Perfume name
+        <span class="indispensable">indespensable</span>
+      </div>
+      <%= f.text_area :perfumename, class:"perfumes_text", id:"perfume_name", placeholder:"Perfume name（indespensable Maximum number of characters is 40)", maxlength:"40" %>
+    </div>
+    <div class="perfumes_detail">
+      <div class="perfume_brand">
+        <div class="weight_bold_text">
+          Brand
+        </div>
+        <%= f.text_area :brand, class:"perfumes_brand", placeholder:"Brand", maxlength:"40"%>
+        <%# <%= f.text_area :explanation, class:"items-text", id:"item-info", placeholder:"商品の説明（必須 1,000文字まで）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+      <div class="items-detail">
+        <div class="weight_bold_text">Perfume detail</div>
+        <div class="form">
+          <div class="weight_bold_text">
+          Type
+          </div>
+          <%= f.collection_select(:type_id, Type.all, :id, :name, {}, {class:"select-box", id:"perfume_type"}) %>
+          <div class="weight_bold_text">
+            Perfume note
+          </div>
+          <%= f.text_area :note, class:"perfume_note", placeholder:"Note", maxlength:"1000" %>
+          <div class="weight_bold_text">
+            Note
+          </div>
+          <%= f.text_area :memo, class:"perfume_memo", placeholder:"Memo", maxlength:"1000" %>
+      </div>
+    </div>
+
+    <div class="lineup_btn_contents">
+      <%= f.submit "Line up" ,class:"line_up_btn" %>
+      <%=link_to 'back', root_path, class:"back-btn" %>
+    </div>
+
+  </div>
+  <% end %>
+</div>
