@@ -10,57 +10,59 @@
       <%= render 'shared/error_messages', model: f.object %>
 
       <div class="img_upload">
-        <div class="weight_bold_text">
+        <div class="weight_bold_text perfume_img">
           Perfume image
           <span class="must">must</span>
         </div>
         <div class="click_upload">
           <p>
-            クリックして画像をアップロードして下さい
+            クリックして画像をアップロード
           </p>
           <%= f.file_field :image, class:"perfume_image" %>
         </div>
       </div>
 
-      <div class="perfume_name">
-        <div class="weight_bold_text">
-          Perfume name
-          <span class="must">must</span>
+      <div class="perfume_details">
+        <div class="perfume_name">
+          <div class="weight_bold_text">
+            Perfume name
+            <span class="must">must</span>
+          </div>
+          <%= f.text_area :perfumename, class:"perfume_form", placeholder: "Perfume name", maxlength: "40" %>
         </div>
-        <%= f.text_area :perfumename, class:"perfume_name_form", placeholder: "Perfume name", maxlength: "40" %>
-      </div>
 
-      <div class="perfume_brand">
-        <div class="weight_bold_text">
-          Brand
+        <div class="perfume_brand">
+          <div class="weight_bold_text">
+            Brand
+          </div>
+          <%= f.text_area :brand, class:"perfume_form", placeholder: "Brand", maxlength: "40" %>
         </div>
-        <%= f.text_area :brand, class:"perfume_brand_form", placeholder: "Brand", maxlength: "40" %>
-      </div>
 
-      <div class="perfume_type">
-        <div class="weight_bold_text">
-          Type
+        <div class="perfume_type">
+          <div class="weight_bold_text">
+            Type
+          </div>
+          <%= f.collection_select(:type_id, Type.all, :id, :name, {}, {class:"select-box", id:"perfume_type"}) %>
         </div>
-        <%= f.collection_select(:type_id, Type.all, :id, :name, {}, {class:"select-box", id:"perfume_type"}) %>
-      </div>
 
-      <div class="perfume_note">
-        <div class="weight_bold_text">
-          Perfume note
+        <div class="perfume_note">
+          <div class="weight_bold_text">
+            Perfume note
+          </div>
+          <%= f.text_area :note, class: "perfume_form text_form", placeholder: "Note", maxlength: "1000" %>
         </div>
-        <%= f.text_area :note, class: "perfume_note_form", placeholder: "Note", maxlength: "1000" %>
-      </div>
 
-      <div class="perfume_memo">
-        <div class="weight_bold_text">
-          Memo
+        <div class="perfume_memo">
+          <div class="weight_bold_text">
+            Memo
+          </div>
+          <%= f.text_area :memo, class: "perfume_form text_form", placeholder: "Memo", maxlength: "1000" %>
         </div>
-        <%= f.text_area :memo, class: "perfume_memo_form", placeholder: "Memo", maxlength: "1000" %>
-      </div>
 
-      <div class="lineup_btn">
-        <%= f.submit "Line up", class:"line_up_btn" %>
-        <%= link_to "back", root_path, class: "back_btn" %>
+        <div class="lineup_btns">
+          <%= f.submit "Line up", class:"line_up_btn" %>
+          <%= link_to "back", root_path, class: "back_btn" %>
+        </div>
       </div>
     <% end %>
   </div>
