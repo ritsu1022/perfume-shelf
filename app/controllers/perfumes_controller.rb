@@ -1,5 +1,6 @@
 class PerfumesController < ApplicationController
   def index
+    @perfumes = Perfume.all
   end
 
   def new
@@ -13,6 +14,10 @@ class PerfumesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @perfume = Perfume.find(params[:id])
   end
 
   private

@@ -3,7 +3,12 @@
     <%= render "header_perfume" %>
   </div>
   <div class="main_shelf">
-    <%= render "main_perfume" %>
+    <div class="main_introduction">
+      <%= render "main_perfume" %>
+    </div>
+    <div class="shelf">
+      <%= render partial: "perfume", collection: @perfumes %>
+    </div>
   </div>
 
   

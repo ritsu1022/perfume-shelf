@@ -10,7 +10,7 @@
 .main_shelf {
   background-color: #5a544b;
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: 100vh;
 }
 
 /*  ヘッダー  */
@@ -88,7 +88,7 @@ header {
   text-align: center;
   background-color: #5a544b;
   width: 100vw;
-  height: calc(100% - 80px);
+  height: 100%;
   padding-bottom: 80px;
 }
 
@@ -161,4 +161,34 @@ header {
 .back_btn {
   text-align: center;
   height: 40px;
+}
+
+/* トップページ香水一覧 */
+
+.shelf {
+  padding: 35px 100px;
+  display: flex;
+}
+
+.card {
+  width: 200px;
+  height: 350px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.card_img {
+  width: 200px;
+  height: 300px;
+}
+
+.card_title {
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+}
+
+.card_user {
+  color: #fff;
+  text-decoration: none;
 }
