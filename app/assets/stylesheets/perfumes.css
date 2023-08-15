@@ -19,6 +19,8 @@
   font-size: 35px;
   line-height: 50px;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .login {
@@ -191,4 +193,50 @@ header {
 .card_user {
   color: #fff;
   text-decoration: none;
+}
+
+/* 香水詳細ページ */
+
+.perfume_detail {
+  background-color: #5a544b;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+}
+
+.details_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+}
+
+.perfume_detail_img {
+  width: 300px;
+  height: 450px;
+  margin-right: 80px;
+}
+
+.details {
+  width: 400px;
+  height: 450px;
+}
+
+.details span {
+  background-color: #a69abd;
+  padding: 2px 8px;
+  font-weight: bold;
+}
+
+.show_back_btn {
+  background-color: #4d4c61;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.show_back {
+  margin-top: 60px;
 }

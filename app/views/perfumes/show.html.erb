@@ -1,0 +1,44 @@
+<%= render "header_perfume" %>
+
+<div class="perfume_detail">
+  <div class="details_wrapper">
+    <div class="detail_img">
+      <%= image_tag(@perfume.image, class: :perfume_detail_img) %>
+    </div>
+    <div class="details">
+      <div class="details_name">
+        <span>Perfume name</span>
+        <p class="details_text">
+          <%= @perfume[:perfumename] %>
+        </p>
+      </div>
+      <div class="details_brand">
+        <span>Brand</span>
+        <p class="details_text">
+          <%= @perfume[:brand] %>
+        </p>
+      </div>
+      <div class="details_type">
+        <span>Type</span>
+        <p class="details_text">
+          <%= @perfume.type.name %>
+        </p>
+      </div>
+      <div class="details_note">
+        <span>Note</span>
+        <p class="details_text">
+          <%= @perfume[:note] %>
+        </p>
+      </div>
+      <div class="details_memo">
+        <span>Memo</span>
+        <p class="details_text">
+          <%= @perfume[:memo] %>
+        </p>
+      </div>
+      <div class="show_back">
+        <%= link_to 'back', :back, class: "show_back_btn" %>
+      </div>
+    </div>
+  </div>
+</div>
