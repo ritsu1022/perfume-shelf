@@ -1,18 +1,20 @@
-<div class="header_logo">
-  Perfume shelf
-</div>
-<div class="header_button">
+<div class="header">
+  <div class="logo">
+    <%= link_to "Perfume shelf", root_path, class: "header_logo" %>
+  </div>
+  <div class="header_button">
 
-  <% if user_signed_in? %>
-    <ul class="login_btn">
-      <li><%= link_to "logout", destroy_user_session_path, method: :delete, class: "logout header_btn" %></li>
-      <li><%= link_to "user edit", edit_user_path(id: current_user.id), class: "edit_user header_btn" %></li>
-    </ul>
-  <% else %>
-    <ul class="login_btn">
-      <li><%= link_to "login", new_user_session_path, class: "login header_btn" %></li>
-      <li><%= link_to "sign up", new_user_registration_path, class: "sign_up header_btn" %></li>
-    </ul>
-  <% end %>
+    <% if user_signed_in? %>
+      <ul class="login_btn">
+        <li><%= link_to "logout", destroy_user_session_path, method: :delete, class: "logout header_btn" %></li>
+        <li><%= link_to "user edit", edit_user_path(id: current_user.id), class: "edit_user header_btn" %></li>
+      </ul>
+    <% else %>
+      <ul class="login_btn">
+        <li><%= link_to "login", new_user_session_path, class: "login header_btn" %></li>
+        <li><%= link_to "sign up", new_user_registration_path, class: "sign_up header_btn" %></li>
+      </ul>
+    <% end %>
+  </div>
 
 </div>
