@@ -36,8 +36,15 @@
           <%= @perfume[:memo] %>
         </p>
       </div>
-      <div class="show_back">
-        <%= link_to 'back', :back, class: "show_back_btn" %>
+      <div class="show_btns">
+        <% if user_signed_in? && current_user.id == @perfume[:user_id] %>
+        <div class="show_edit">
+          <%= link_to 'edit', edit_perfume_path, class: "show_edit_btn" %>
+        <% end %>
+        </div>
+        <div class="show_back">
+          <%= link_to 'back', :back, class: "show_back_btn" %>
+        </div>
       </div>
     </div>
   </div>

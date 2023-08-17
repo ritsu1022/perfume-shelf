@@ -20,6 +20,20 @@ class PerfumesController < ApplicationController
     @perfume = Perfume.find(params[:id])
   end
 
+  def edit
+    @perfume = Perfume.find(params[:id])
+  end
+
+  def update
+    @perfume = Perfume.find(params[:id])
+    if @perfume.update(perfume_params)
+      redirect_to perfume_path
+    else
+      render :edit
+    end
+  end
+  
+
   private
 
   def perfume_params
