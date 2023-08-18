@@ -38,8 +38,9 @@
       </div>
       <div class="show_btns">
         <% if user_signed_in? && current_user.id == @perfume[:user_id] %>
-        <div class="show_edit">
+        <div class="show_edit_destroy">
           <%= link_to 'edit', edit_perfume_path, class: "show_edit_btn" %>
+          <%= link_to 'delete', perfume_path, method: :delete, class: "show_destroy_btn" %>
         <% end %>
         </div>
         <div class="show_back">
