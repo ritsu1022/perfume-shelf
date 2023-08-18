@@ -33,6 +33,13 @@ class PerfumesController < ApplicationController
     end
   end
   
+  def destroy
+    @perfume = Perfume.find(params[:id])
+    return unless current_user.id == @perfume.user_id
+
+    @perfume.destroy
+    redirect_to root_path
+  end
 
   private
 

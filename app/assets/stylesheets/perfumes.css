@@ -245,9 +245,20 @@ header {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.show_edit {
+.show_destroy_btn {
+  background-color: #895b8a;
+  padding: 8px 18px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.show_edit_destroy {
   width: 200px;
   height: 30px;
   margin-top: 50px;
