@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="header_wrapper">
+    <%= render "perfumes/header_perfume" %>
+  </div>
+  <div class="users_shelf">
+    <div class="user_page_introduction">
+      <%= render "user_mypage" %>
+    </div>
+    <div class="shelf">
+      My shelf
+      <%= render partial: "perfumes/perfume", collection: @perfumes %>
+    </div>
+  </div>
+</div>
