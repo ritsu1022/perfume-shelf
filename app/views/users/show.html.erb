@@ -7,8 +7,12 @@
       <%= render "user_mypage" %>
     </div>
     <div class="shelf">
-      My shelf
-      <%= render partial: "perfumes/perfume", collection: @perfumes %>
+      <div class="shelf_logo">
+        My shelf
+      </div>
+      <div class="shelf_img">
+        <%= render partial: "perfumes/perfume", collection: @perfumes %>
+      </div>
     </div>
   </div>
 </div>
