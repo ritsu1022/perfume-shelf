@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="header_wrapper">
+    <%= render "perfumes/header_perfume" %>
+  </div>
+  <div class="users_shelf">
+    <div class="user_page_introduction">
+      <%= render "user_mypage" %>
+    </div>
+    <div class="shelf">
+      <div class="shelf_logo">
+        My shelf
+      </div>
+      <div class="shelf_img">
+        <%= render partial: "perfumes/perfume", collection: @perfumes %>
+      </div>
+    </div>
+  </div>
+</div>

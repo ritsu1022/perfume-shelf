@@ -1,0 +1,22 @@
+<div class="main_wrapper">
+  <% if user_signed_in? %>
+    <div class="room_introduction">
+        <%= link_to "#{current_user.name}", user_path, class: :room_name %>
+        's room
+    </div>
+  <% end %>
+  <%# <div class="my_favorites_logo"> %>
+    <%# My faborites %>
+  <%# </div> %>
+  <% if user_signed_in? %>
+  <%= link_to(new_perfume_path, class: "lineup_btn") do %>
+    <span class="lineup_btn_text">Line up</span>
+    <%= image_tag 'icon_perfume.png', size: '185x50' ,class: "lineup_btn_icon" %>
+  <% end %>
+<% else %>
+  <%= link_to(new_user_session_path, class: "lineup_btn") do %>
+    <span class="lineup_btn_text">Line up</span>
+    <%= image_tag 'icon_perfume.png', size: '185x50' ,class: "lineup_btn_icon" %>
+  <% end %>
+<% end %>
+</div>
