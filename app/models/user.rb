@@ -7,6 +7,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   
+  has_many_attached :images
   has_many :perfumes
 
   def self.find_first_by_auth_conditions(warden_conditions)
