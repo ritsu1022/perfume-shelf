@@ -151,5 +151,15 @@
 .shelf_logo {
   font-size: 30px;
   color: white;
-  
+}
+
+.my_favorites {
+  font-size: 25px;
+  color: #cc7eb1;
+  font-weight: bold;
+  padding: 25px 100px 10px 100px;
+}
+
+.favorites_shelf {
+  padding-top: 5px;
 }
