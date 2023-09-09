@@ -6,7 +6,12 @@
   <div class="my_favorites"> 
       My favorites
     <div class="favorites_shelf">
-      <%= image_tag @user.image.to_s, class: "favorite_image"%>
+      <div class="favorite_image">
+        <%= image_tag @user.image.to_s, class: "fav_image" %>
+      </div>
+      <div class="favorite_name">
+        <%= @user.favorite1 %>
+      </div>
       <%# @user.image.each do |image|%>
         <%#= image_tag(@user.image, width:150) %>
       <%# end %>
