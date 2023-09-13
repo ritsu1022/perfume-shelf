@@ -43,44 +43,52 @@
               <%= f.label :favorite1%>
             </div>
             <div class="field-input">
+              <%= f.file_field :image, class: 'image' %>
+                <%# user.images.each do |image|%>
+                  <%#= image_tag image.to_s %>
+                <%# end %>
               <%= f.text_field :favorite1, autofocus: true%>
             </div>
           </div>
-          <div class="field">
-            <div class="field-label">
-              <%= f.label :favorite2%>
-            </div>
-            <div class="field-input">
-              <%= f.text_field :favorite2, autofocus: true%>
-            </div>
-          </div>
-          <div class="field">
-            <div class="field-label">
-              <%= f.label :favorite3%>
-            </div>
-            <div class="field-input">
-              <%= f.text_field :favorite3, autofocus: true%>
-            </div>
-          </div>
-        </div>
-        <div class="favorites">
-          <div class="field">
-            <div class="field-label">
-              <%= f.label :favorite4%>
-            </div>
-            <div class="field-input">
-              <%= f.text_field :favorite4, autofocus: true%>
-            </div>
-          </div>
-          <div class="field">
-            <div class="field-label">
-              <%= f.label :favorite5%>
-            </div>
-            <div class="field-input">
-              <%= f.text_field :favorite5, autofocus: true%>
-            </div>
-          </div>
-        </div>
+          <%# <div class="field"> %>
+            <%# <div class="field-label"> %>
+              <%# <%= f.label :favorite2%>
+            <%# </div> %>
+            <%# <div class="field-input"> %>
+              <%# <%= f.file_field :image2 %>
+              <%# <%= f.text_field :favorite2, autofocus: true%>
+            <%# </div> %>
+          <%# </div> %>
+          <%# <div class="field"> %>
+            <%# <div class="field-label"> %>
+              <%# <%= f.label :favorite3%>
+            <%# </div> %>
+            <%# <div class="field-input"> %>
+              <%# <%= f.file_field :image3 %>
+              <%# <%= f.text_field :favorite3, autofocus: true%>
+            <%# </div> %>
+          <%# </div> %>
+        <%# </div> %>
+        <%# <div class="favorites"> %>
+          <%# <div class="field"> %>
+            <%# <div class="field-label"> %>
+              <%# <%= f.label :favorite4%>
+            <%# </div> %>
+            <%# <div class="field-input"> %>
+              <%# <%= f.file_field :image4 %>
+              <%# <%= f.text_field :favorite4, autofocus: true%>
+            <%# </div> %>
+          <%# </div> %>
+          <%# <div class="field"> %>
+            <%# <div class="field-label"> %>
+              <%# <%= f.label :favorite5%>
+            <%# </div> %>
+            <%# <div class="field-input"> %>
+              <%# <%= f.file_field :image5 %>
+              <%# <%= f.text_field :favorite5, autofocus: true%>
+            <%# </div> %>
+          <%# </div> %>
+        <%# </div> %>
         <div class="actions">
           <%= f.submit "Create Account", class: "signup_btn" %>
         </div>

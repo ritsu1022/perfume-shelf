@@ -7,10 +7,10 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :name,           null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
       t.string :favorite1
-      t.string :favorite2
-      t.string :favorite3
-      t.string :favorite4
-      t.string :favorite5
+      # t.string :favorite2
+      # t.string :favorite3
+      # t.string :favorite4
+      # t.string :favorite5
 
       ## Recoverable
       t.string   :reset_password_token
