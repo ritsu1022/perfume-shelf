@@ -1,13 +1,22 @@
 <div class="main_wrapper">
-  <% if user_signed_in? %>
-    <div class="room_introduction">
-        <%= link_to "#{current_user.name}", user_path, class: :room_name %>
-        's room
+  <div class="room_introduction">
+    <%= link_to "#{current_user.name}", user_path, class: :room_name %>
+      's room
+  </div>
+  <div class="my_favorites"> 
+      My favorites
+    <div class="favorites_shelf">
+      <div class="favorite_image">
+        <%= image_tag @user.image.to_s, class: "fav_image" %>
+      </div>
+      <div class="favorite_name">
+        <%= @user.favorite1 %>
+      </div>
+      <%# @user.image.each do |image|%>
+        <%#= image_tag(@user.image, width:150) %>
+      <%# end %>
     </div>
-  <% end %>
-  <%# <div class="my_favorites_logo"> %>
-    <%# My faborites %>
-  <%# </div> %>
+  </div>
   <% if user_signed_in? %>
   <%= link_to(new_perfume_path, class: "lineup_btn") do %>
     <span class="lineup_btn_text">Line up</span>

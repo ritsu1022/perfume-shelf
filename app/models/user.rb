@@ -7,7 +7,9 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   
+  has_one_attached :image
   has_many :perfumes
+  mount_uploader :image, ImageUploader
 
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup

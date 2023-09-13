@@ -1,6 +1,4 @@
-/***********************************
-ヘッダー
-***********************************/
+/*  ヘッダー  */
 
 .second-header {
   width: 100vw;
@@ -19,9 +17,7 @@
   color: black;
 }
 
-/***********************************
-ページメイン部分共通
-***********************************/
+/*  ページメイン部分共通  */
 
 .account_page {
   background-color: #5a544b;
@@ -36,9 +32,7 @@
   margin: 0;
 }
 
-/***********************************
-ページメイン部分ログイン
-***********************************/
+/*  ページメイン部分ログイン  */
 
 .sessions_left {
   margin-right: 100px;
@@ -60,9 +54,7 @@
   background-color: #333631;
 }
 
-/************************************
-ページメイン部分新規登録
-************************************/
+/*  ページメイン部分新規登録  */
 
 .registrations_left {
   margin-right: 100px;
@@ -84,9 +76,7 @@
   margin-top: 25px;
 }
 
-/*************************************
-ページメイン部分編集
-*************************************/
+/*  ページメイン部分編集  */
 
 .edit_account_left {
   margin-right: 100px;
@@ -151,5 +141,27 @@
 .shelf_logo {
   font-size: 30px;
   color: white;
-  
+}
+
+.my_favorites {
+  font-size: 25px;
+  color: #cc7eb1;
+  font-weight: bold;
+  padding: 25px 100px 10px 100px;
+}
+
+.favorites_shelf {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fav_image {
+  width: 100px;
+  height: 150px;
+}
+
+.favorite_name {
+  font-size: 10px;
+  color: white;
 }
