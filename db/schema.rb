@@ -49,10 +49,6 @@ ActiveRecord::Schema.define(version: 2023_09_08_144102) do
     t.string "name", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "favorite1"
-    t.string "favorite2"
-    t.string "favorite3"
-    t.string "favorite4"
-    t.string "favorite5"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
