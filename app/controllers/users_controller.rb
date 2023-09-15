@@ -8,6 +8,12 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def new
+    @user = User.new(user_params)
+
+    respond_to do |format|
+      if User.post_favorites_by(user_params)
+        format.html { redirect_to }
 
 
   def update
@@ -21,6 +27,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :favorite1, :image)
+    params.require(:user).permit(:name, :favorite1, {image: []})
   end
 end
