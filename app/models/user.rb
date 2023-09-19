@@ -32,15 +32,15 @@ class User < ApplicationRecord
     false
   end
 
-  def self.post_favorites_by(user_params)
-    return false if perfume_params[:image].nil?
-    User.transaction do
-      user_params[:image].each do |image|
-        new_image = User.new(name: user_params[:favorite], image: image)
-        return false unless new_image.save!
-      end
-    end
+  # def self.post_favorites_by(user_params)
+  #   return false if perfume_params[:image].nil?
+  #   User.transaction do
+  #     user_params[:image].each do |image|
+  #       new_image = User.new(name: user_params[:favorite], image: image)
+  #       return false unless new_image.save!
+  #     end
+  #   end
 
-    true
-  end
+  #   true
+  # end
 end
