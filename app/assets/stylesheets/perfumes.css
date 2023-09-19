@@ -1,3 +1,8 @@
+.wrapper {
+  background-color: #5a544b;
+  overflow: scroll;
+}
+
 .header {
   width: 100vw;
   height: 80px;
@@ -10,7 +15,7 @@
 .main_shelf {
   background-color: #5a544b;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 /*  ヘッダー  */
@@ -170,6 +175,7 @@ header {
 .shelf {
   padding: 35px 100px;
   display: flex;
+  
 }
 
 .card {
