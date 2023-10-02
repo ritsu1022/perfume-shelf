@@ -22,10 +22,11 @@
 .account_page {
   background-color: #5a544b;
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: scroll;
 }
 
 .account_page h1 {
@@ -62,6 +63,7 @@
 
 .favorites {
   display: flex;
+  flex-direction: column;
 }
 
 .field {
@@ -74,6 +76,11 @@
   background-color: #333631;
   border: 2px solid #333631;
   margin-top: 25px;
+}
+
+.preview-image {
+  width: 100px;
+  height: 150px;
 }
 
 /*  ページメイン部分編集  */
@@ -141,6 +148,7 @@
 .shelf_logo {
   font-size: 30px;
   color: white;
+  padding: 30px 100px;
 }
 
 .my_favorites {
