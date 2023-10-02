@@ -42,8 +42,9 @@
             <div class="field-label">
               <%= f.label :favorite1%>
             </div>
+            <div id="previews"></div>
             <div class="field-input">
-              <%= f.file_field :image, class: 'image' %>
+              <%= f.file_field :image, class: 'image', id: "new_image" %>
                 <%# user.images.each do |image|%>
                   <%#= image_tag image.to_s %>
                 <%# end %>
